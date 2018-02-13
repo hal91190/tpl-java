@@ -1,2 +1,30 @@
-# tpl-java
-Un template pour un projet Java.
+# Template pour un projet Java
+Ce projet propose un modèle pour démarrer des projets Java.
+Son usage nécessite bien sûr l'installation préalable du [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+
+## Compiler le projet
+Le projet se compile en utilisant [gradle](https://gradle.org/).
+
+Sous Linux
+```bash
+$ ./gradlew build
+```
+
+Sous Windows
+```
+> gradlew.bat build
+```
+
+## Éxécuter l'application
+1. Décompresser l'une des archives zip ou tar se trouvant dans le répertoire ``build/distributions``.
+1. Lancer l'application.
+
+Sous Linux
+```bash
+$ tpl-java/bin/tpl-java
+```
+
+Sous Windows
+```
+> tpl-java/bin/tpl-java.bat
+```

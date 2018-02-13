@@ -21,6 +21,12 @@ application {
 }
 
 dependencies {
+    // Logging
+    compile("org.apache.logging.log4j:log4j-api:2.10.0")
+    compile("org.apache.logging.log4j:log4j-core:2.10.0")
+    compile("com.fasterxml.jackson.core:jackson-databind:2.9.4")
+    compile("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.4")
+
     // Pour les tests unitaires
     testCompile("org.junit.jupiter:junit-jupiter-api:5.0.3")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.0.3")

@@ -1,5 +1,8 @@
 package fr.uvsq.poo.tpljava;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Cette classe est le programme principal du projet.
  *
@@ -11,6 +14,8 @@ package fr.uvsq.poo.tpljava;
  */
 public enum Application {
     APPLICATION;
+
+    private static final Logger logger = LogManager.getLogger(Application.class);
 
     /**
      * Un exemple de méthode.
@@ -25,7 +30,9 @@ public enum Application {
      * @param args les paramètres de la ligne de commande du shell
      */
     public void run(String[] args) {
+        logger.trace("Début du programme");
         System.out.println(getGreetings());
+        logger.trace("Fin du programme");
     }
 
     /**
